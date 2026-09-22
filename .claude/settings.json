@@ -1,0 +1,8 @@
+{
+  "permissions": {
+    "deny": [
+      "Read(docs/my_rule.md)",
+      "Edit(/docs/my_rule.md)"
+    ]
+  }
+}
