@@ -1,8 +1,5 @@
 # Repository Guidelines
 
-## Instruction priority
-- ユーザーから明示的に指示されない限り、`docs/my_rule.md` を開いたり読んだり、その内容を考慮したりしないこと。
-
 ## Project Structure & Module Organization
 
 - `lunch-list-mock.html` is the complete mobile-first web app: CSS, markup, mock data, state, and rendering logic live in one file.

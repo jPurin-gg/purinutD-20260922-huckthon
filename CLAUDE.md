@@ -2,9 +2,6 @@
 
 This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
 
-## Instruction priority
-- ユーザーから明示的に指示されない限り、`docs/my_rule.md` を開いたり読んだり、その内容を考慮したりしないこと。
-
 ## Project
 
 `utd_hack` — a mock of a mobile-first web app ("昼めし") for finding lunch spots near Nagaoka that are currently open, and voting on candidates as a group. No backend; the entire app is a single static HTML file (`lunch-list-mock.html`, ~600 lines: `<style>` then `<script>`, no build step, no dependencies besides Google Fonts).
