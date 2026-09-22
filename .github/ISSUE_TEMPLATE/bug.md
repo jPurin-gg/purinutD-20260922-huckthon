@@ -1,7 +1,6 @@
 ---
 name: バグ報告
 about: 期待どおりに動かないときに使う
-title: "bug: "
 labels: bug
 ---
 

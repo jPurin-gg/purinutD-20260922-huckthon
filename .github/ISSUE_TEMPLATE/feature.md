@@ -1,7 +1,6 @@
 ---
 name: 機能追加
 about: 新しい機能の追加や既存機能の改善に使う
-title: "feat: "
 labels: enhancement
 ---
 
