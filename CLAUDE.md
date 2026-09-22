@@ -2,6 +2,9 @@
 
 This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
 
+## Instruction priority
+- ユーザーから明示的に指示されない限り、`docs/my_rule.md` を開いたり読んだり、その内容を考慮したりしないこと。
+
 ## Project
 
 `utd_hack` — a mock of a mobile-first web app ("昼めし") for finding lunch spots near Nagaoka that are currently open, and voting on candidates as a group. No backend; the entire app is a single static HTML file (`lunch-list-mock.html`, ~600 lines: `<style>` then `<script>`, no build step, no dependencies besides Google Fonts).
@@ -25,11 +28,3 @@ It's designed for a phone-width viewport (≤560px); use browser devtools device
 - **Views**: 一覧 (list, with category/open-only/sort filters via `buildFilters()`), a detail bottom sheet (`openSheet`/`renderSheet`/`closeSheet`), and ボード (board, a freeform card layout using `randomPos()` to avoid overlapping new candidate cards). Navigation between 一覧/ボード is by top tabs or left/right swipe.
 - Dark mode follows OS preference (`prefers-color-scheme`), no manual toggle.
 
-## Hackathon ground rules (`docs/my_rule.md`)
-
-These are working agreements for this repo, not code conventions — but they affect how PRs/commits should be structured:
-
-- Keep each PR under ~200 lines of change (jPurin's rule, noted as contentious/since-removed in history — check current `docs/my_rule.md` for the live rule set before assuming it still applies).
-- Every change needs discussion and explicit approval (毎回同意 = approve) before merging — don't just push through changes.
-- Reviews are meant to be done by humans reading and understanding the code themselves, with AI use minimized during review (this constrains how much you should do *unprompted* beyond what's asked — prefer small, explainable diffs).
-- Longer-term product goals (for context, not implementation tasks yet): a Slack usage report after 6 months tracking Active Users against a KPI, a zero-maintenance/zero-cost backend, and store info that updates itself automatically.
