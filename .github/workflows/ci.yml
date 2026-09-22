@@ -1,0 +1,17 @@
+name: Pull Request CI
+
+on:
+  pull_request:
+
+jobs:
+  test:
+    runs-on: ubuntu-24.04
+    
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Run tests
+        run: |
+          # モックのHTMLファイルが存在するか確認
+          test -s lunch-list-mock.html
