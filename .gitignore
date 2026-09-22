@@ -1,0 +1,19 @@
+# macOS
+.DS_Store
+._*
+
+# エディタ
+.vscode/
+.idea/
+*.swp
+
+# Node（将来ビルド環境を入れた場合用）
+node_modules/
+dist/
+
+# 環境変数・秘密情報
+.env
+.env.*
+
+# Claude Code ローカル設定
+.claude/settings.local.json
